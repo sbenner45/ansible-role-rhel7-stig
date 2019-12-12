@@ -1,11 +1,4 @@
 ---
 - hosts: localhost
-  tasks:
-  - debug:
-      msg: Testing a binary module written in Rust
-  
-  - debug:
-      var: ansible_system
-  
-  - name: ping
-    ping:
+  roles:
+    - ansible-roles-rhel7-stig
